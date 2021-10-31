@@ -13,7 +13,7 @@ const Blinds = ({ state }) => {
     return (
         <div className="blinds">
             <div className="blinds__icon">
-                <img src={isOpen ? Open : Closed} />
+                <img src={isOpen ? Open : Closed} alt={isOpen ? "zaluzie otevreny" : "zaluzie zatazeny"}/>
             </div>
             <div className="blinds__name">
                 Žaluzie

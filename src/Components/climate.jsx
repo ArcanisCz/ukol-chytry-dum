@@ -13,7 +13,7 @@ const Climate = ({ climate }) => {
     return (
         <div className="climate">
             <div className="climate__icon">
-                <img src={Temper} />
+                <img src={Temper} alt="teplomer"/>
             </div>
             <div className="climate__content">
                 <div className="climate__temperature">{temp}&deg;C</div>
