@@ -7,7 +7,7 @@ const Lights = (props) => {
     <>
       <div className="lights">
         {props.lights.map((light) => (
-          <Light key={light.name} state={light.state} />
+          <Light key={light.name} name={light.name} state={light.state} />
         ))}
       </div>
     </>

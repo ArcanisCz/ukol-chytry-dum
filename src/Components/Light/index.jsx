@@ -1,22 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import offUrl from './light-off.svg';
 import onUrl from './light-on.svg';
 
-const Light = (props) => {
+/*const Light = (props) => {
   const [jeZapnuta, setJeZapnuta] = useState(state);
 
   const handleClick = () => {
     setJeZapnuta(true);
   };
+};
 
-  const handleClick2 = () => {
-    setJeZapnuta(false);
-  };
-
-  return (
-    <>
-      <div className="light">
+return (
+  <>
+    <div className="light">
+      <button className="light__button" disabled={isOn} onClick={handleClick}>
         <img
           src={isOn ? onUrl : offUrl}
           width={80}
@@ -24,26 +22,36 @@ const Light = (props) => {
           alt={isOn ? 'Light on' : 'Light off'}
           className="light__icon"
         />
-        <div className="Light__buttons">
-          <p>{props.state}</p>
-          <button
-            className="light__button"
-            disabled={isOn}
-            onClick={handleClick}
-          >
-            on
-          </button>
-          <button
-            className="light__button"
-            disabled={!isOn}
-            onClick={handleClick2}
-          >
-            off
-          </button>
-        </div>
+
         <div className="light__name">
           <p>{props.name}</p>
+          <p>{props.state}</p>
         </div>
+      </button>
+    </div>
+  </>
+);
+*/
+
+const Light = (props) => {
+  const [isOn, setIsOn] = useState(resolveOnOff(state));
+
+  const handleClick = () => {
+    setIsOn(!isOn);
+  };
+
+  const resolveOnOff = (state) => {
+    return state === 'on' ? true : false;
+  };
+
+  return (
+    <>
+      <div className="light">
+        <button onClick={handleClick}>
+          <img src={isOn ? onUrl : offUrl} />
+          <p>{props.name}</p>
+          <p>{props.state}</p>
+        </button>
       </div>
     </>
   );
