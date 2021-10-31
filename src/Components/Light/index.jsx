@@ -34,15 +34,15 @@ return (
 */
 
 const Light = (props) => {
-  const [isOn, setIsOn] = useState(resolveOnOff(state));
+  const [isOn, setIsOn] = useState(resolveOnOff(props.state));
 
   const handleClick = () => {
     setIsOn(!isOn);
   };
 
-  const resolveOnOff = (state) => {
+  function resolveOnOff(state) {
     return state === 'on' ? true : false;
-  };
+  }
 
   return (
     <>
