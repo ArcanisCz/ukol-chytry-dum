@@ -1,10 +1,11 @@
 import React from 'react';
+import './style.css';
 
 import Light from './../Light';
 
 const Lights = ({ lights }) => {
   return (
-    <div>
+    <div className="lights">
       {lights.map((element) => (
         <Light
           key={element.name + element.state}

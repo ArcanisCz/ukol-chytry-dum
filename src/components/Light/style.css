@@ -1,31 +1,3 @@
-/*img {
-    width: 3.125rem;
-    cursor: pointer;
-}*/
-
-
-/*.light {
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    width: 15.625rem;
-    margin: 0.8rem;
-    padding: 0.5rem 1.4rem;
-}
-
-.light__name {
-    text-align: center;
-}*/
-
-
-/*.lights {
-    grid-area: lights;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 10px;
-}*/
-
 .light {
     display: flex;
     align-items: center;

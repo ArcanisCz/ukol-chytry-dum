@@ -22,7 +22,7 @@ const Climate = ({ temperature, humidity }) => {
         {/* <div class="climate__temperature">24&deg;C</div> */}
         {/* <div class="climate__humidity">Vlhost vzduchu 51&nbsp;%</div> */}
         <div className="climate__temperature">{temp}</div>
-        <div className="climate__humidity">Vlhost vzduchu {humidity}%</div>
+        <div className="climate__humidity">Vlhkost vzduchu {humidity}%</div>
       </div>
       <div className="climate__controls">
         <button className="button" value="+" onClick={() => setTemp(temp + 1)}>

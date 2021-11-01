@@ -16,12 +16,16 @@ const Blinds = ({ state }) => {
       <div className="blinds__name">Žaluzie</div>
       <div className="blinds__controls">
         <button
-          className="button button--active"
+          /* className="button button--active" */
+          className={blinds === 'open' ? 'button button--active' : 'button'}
           onClick={() => setBlinds('open')}
         >
           Otevřeno
         </button>
-        <button className="button" onClick={() => setBlinds('closed')}>
+        <button /* className="button" */
+          className={blinds === 'closed' ? 'button button--active' : 'button'}
+          onClick={() => setBlinds('closed')}
+        >
           Zavřeno
         </button>
       </div>
