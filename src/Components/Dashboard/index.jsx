@@ -17,7 +17,7 @@ const Dashboard = () => {
         <Lights lights={smartHomeData.lights} />
         <Climate climate={smartHomeData.climate} />
         <Blinds blinds={smartHomeData.blinds} />
-        <Energy />
+        <Energy energyConsumption={smartHomeData.energyConsumption} />
       </main>
     </>
   );

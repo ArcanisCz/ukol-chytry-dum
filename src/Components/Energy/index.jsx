@@ -5,7 +5,7 @@ import './style.css';
 import Electricity from './electricity.svg';
 import Water from './water.svg';
 
-const Energy = (electricity, water) => {
+const Energy = (props) => {
   return (
     <>
       <div className="energy">
@@ -15,7 +15,9 @@ const Energy = (electricity, water) => {
           </div>
           <div className="energy__consumption">
             <div className="energy__description">Elektřina</div>
-            <div className="energy__value">36.7 kW</div>
+            <div className="energy__value">
+              {props.energyConsumption.electricity} kW
+            </div>
           </div>
         </div>
         <div className="energy__source">
@@ -25,7 +27,7 @@ const Energy = (electricity, water) => {
           <div className="energy__consumption">
             <div className="energy__description">Voda</div>
             <div className="energy__value">
-              14.1 m<sup>3</sup>
+              {props.energyConsumption.water} m<sup>3</sup>
             </div>
           </div>
         </div>
