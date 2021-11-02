@@ -5,14 +5,14 @@ import './style.css';
 import Temp from './temp.svg';
 
 const Climate = (props) => {
-  const [number, setNumber] = useState(props.climate.temperature);
+  const [temperature, setTemperature] = useState(props.climate.temperature);
 
   const handleClick = () => {
-    setNumber(number + 1);
+    setTemperature(temperature + 1);
   };
 
   const handleClick2 = () => {
-    setNumber(number - 1);
+    setTemperature(temperature - 1);
   };
 
   return (
@@ -23,9 +23,7 @@ const Climate = (props) => {
         </div>
 
         <div className="climate__content">
-          <div className="climate__temperature">
-            {props.climate.temperature}&deg;C
-          </div>
+          <div className="climate__temperature">{temperature}&deg;C</div>
           <div className="climate__humidity">{props.climate.humidity}%</div>
         </div>
 
