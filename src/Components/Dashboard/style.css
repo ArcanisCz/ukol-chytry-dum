@@ -1,7 +1,7 @@
 .dashboard {
   flex: 1 0 auto;
   display: grid;
-  grid-template-columns: 350px 350px;
+  grid-template-columns: 300px 300px;
   grid-template-rows: repeat(4, auto);
   grid-template-areas:
     'lights climate'

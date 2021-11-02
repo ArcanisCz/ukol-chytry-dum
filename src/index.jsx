@@ -8,6 +8,8 @@ import Dashboard from './Components/Dashboard';
 
 import smartHomeData from './smartHomeData';
 
+import House from './house.jpg';
+
 const App = () => (
   <>
     <div className="container">
