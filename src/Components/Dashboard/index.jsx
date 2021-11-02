@@ -15,8 +15,8 @@ const Dashboard = () => {
     <>
       <main className="dashboard">
         <Lights lights={smartHomeData.lights} />
-        <Climate />
-        <Blinds />
+        <Climate climate={smartHomeData.climate} />
+        <Blinds blinds={smartHomeData.blinds} />
         <Energy />
       </main>
     </>

@@ -18,7 +18,7 @@ const Light = (props) => {
     <>
       <div className="light">
         <button onClick={handleClick}>
-          <img src={isOn ? onUrl : offUrl} />
+          <img src={isOn ? onUrl : offUrl} width={100} height={40} />
           <p>{props.name}</p>
         </button>
       </div>
