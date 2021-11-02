@@ -5,14 +5,14 @@ import './style.css';
 import Temp from './temp.svg';
 
 const Climate = (props) => {
-  const [cislo, setCislo] = useState(props.climate.temperature);
+  const [number, setNumber] = useState(props.climate.temperature);
 
   const handleClick = () => {
-    setCislo(cislo + 1);
+    setNumber(number + 1);
   };
 
   const handleClick2 = () => {
-    setCislo(cislo - 1);
+    setNumber(number - 1);
   };
 
   return (
