@@ -9,11 +9,11 @@ const Blinds = (props) => {
   const [isOpen, setIsOpen] = useState(props.blinds.state);
 
   const handleClick = () => {
-    setIsOpen(isOpen);
+    setIsOpen(true);
   };
 
   const handleClick2 = () => {
-    setIsOpen(isOpen);
+    setIsOpen(false);
   };
 
   return (
@@ -21,13 +21,21 @@ const Blinds = (props) => {
       <div className="blinds">
         <div className="blinds__name">Žaluzie</div>
 
-        <img src={blindsOpen} width={80} height={80} />
-
-        <img src={blindsClosed} width={80} height={80} />
+        <img
+          src={isOpen ? blindsOpen : blindsClosed}
+          width={80}
+          height={80}
+          alt={isOpen ? 'Blinds open' : 'Blinds closed'}
+          className="blinds__icon"
+        />
 
         <div className="blinds__controls">
-          <button onClick={handleClick}>Otevřeno</button>
-          <button onClick={handleClick2}>Zavřeno</button>
+          <button onClick={handleClick} className="button button--active">
+            Otevřeno
+          </button>
+          <button onClick={handleClick2} className="button">
+            Zavřeno
+          </button>
         </div>
       </div>
     </>
