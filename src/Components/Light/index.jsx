@@ -20,16 +20,14 @@ const Light = (props) => {
     <>
       <div className="light">
         <button onClick={handleClick}>
-          <div className="light__name">
-            <img
-              src={isOn ? onUrl : offUrl}
-              width={100}
-              height={40}
-              className="light__icon"
-            />
-            {props.name}
-          </div>
+          <img
+            src={isOn ? onUrl : offUrl}
+            width={100}
+            height={40}
+            className="light__icon"
+          />
         </button>
+        <div className="light__name"> {props.name} </div>
       </div>
     </>
   );
