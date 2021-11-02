@@ -10,6 +10,8 @@ import Lights from '../Lights';
 
 import smartHomeData from '../../smartHomeData';
 
+import './style.css';
+
 const Dashboard = () => {
   return (
     <>

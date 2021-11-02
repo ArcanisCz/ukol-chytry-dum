@@ -30,8 +30,12 @@ const Blinds = (props) => {
         />
 
         <div className="blinds__controls">
-          <button onClick={handleClick}>Otevřeno</button>
-          <button onClick={handleClick2}>Zavřeno</button>
+          <button onClick={handleClick} disabled={isOpen}>
+            Otevřeno
+          </button>
+          <button onClick={handleClick2} disabled={!isOpen}>
+            Zavřeno
+          </button>
         </div>
       </div>
     </>
