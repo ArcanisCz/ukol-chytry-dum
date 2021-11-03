@@ -8,6 +8,7 @@
   cursor: pointer;
   transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
   border: 2px solid white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .light:active {
@@ -23,7 +24,7 @@
 }
 
 .light__icon {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .light__icon img {
@@ -31,6 +32,5 @@
 }
 
 .light__name {
-  flex: 1;
   font-weight: bold;
 }
