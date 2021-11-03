@@ -10,9 +10,9 @@
   border: 2px solid white;
 }
 
-.light:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+.light:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
   border-color: #0099ff;
 }
 
@@ -24,7 +24,6 @@
 
 .light__icon {
   margin-right: 20px;
-  background-color: white;
 }
 
 .light__icon img {
@@ -34,4 +33,18 @@
 .light__name {
   flex: 1;
   font-weight: bold;
+}
+
+.light__controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.light__controls button:first-child {
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+.light__controls button:last-child {
+  border-radius: 0 0 5px 5px;
 }
