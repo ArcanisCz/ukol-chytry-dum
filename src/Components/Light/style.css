@@ -34,17 +34,3 @@
   flex: 1;
   font-weight: bold;
 }
-
-.light__controls {
-  display: flex;
-  flex-direction: column;
-}
-
-.light__controls button:first-child {
-  border-radius: 5px 5px 0 0;
-  border-bottom: 1px solid #bbbbbb;
-}
-
-.light__controls button:last-child {
-  border-radius: 0 0 5px 5px;
-}
