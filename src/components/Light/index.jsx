@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import lightOn from './light-on.svg';
 import lightOff from './light-off.svg';
 
+import './style.css';
 
 const Light = ({name, state}) => {
    
