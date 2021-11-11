@@ -6,20 +6,27 @@ import blindsClosed from './blinds-closed.svg';
 
 const Blinds = ({state}) => {
 
-    const [bliState, setBliState] = useState(state);
-    const changeBlinds = (e) => setBliState(e.target.innerText === 'Otevřít' ? 'open' : 'closed')
+    const [stateOfBlinds, setStateOfBlind] = useState(state);
+
+    const onClose = () => {
+        setStateOfBlind('close');
+    }
+
+    const onOpen = () => {
+        setStateOfBlind('open');
+    }
 
     return (
         <div className="blinds">
             <div className="blinds__icon">
-                <img src={bliState === 'open' ? blindsOpen : blindsClosed} />
+            <img src={stateOfBlinds === 'open' ? blindsOpen : blindsClosed} />
             </div>
             <div className="blinds__name">
-                Žaluzie
+                Žalúzie
             </div>
             <div className="blinds__controls">
-                <button onClick={changeBlinds} className={`bli-button ${bliState === 'closed' ? 'bli-button--active' : ''}`}>Otevřít</button>
-                <button onClick={changeBlinds} className={`bli-button ${bliState === 'open' ? 'bli-button--active' : ''}`}>Zavřít</button>
+                <button className={stateOfBlinds === 'open' ? "button button--active" : "button"} onClick={onOpen}>Otvorené</button>
+                <button className={stateOfBlinds === 'close' ? "button button--active" : "button"} onClick={onClose}>Zavrené</button>
             </div>
         </div>
     );
