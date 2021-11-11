@@ -7,6 +7,7 @@ import Dashboard from './components/Dashboard';
 
 import smartHomeData from './smartHomeData';
 
+
 const App = () => (
   <>
     <div className="container">
