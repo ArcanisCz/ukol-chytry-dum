@@ -7,23 +7,23 @@ import './style.css';
 
 const Energy = ({electricity, water}) => {
     return (
-        <div class="energy">
-            <div class="energy__source">
-                <div class="energy__icon">
+        <div className="energy">
+            <div className="energy__source">
+                <div className="energy__icon">
                     <img src={electricitySvg} />
                 </div>
-                <div class="energy__consumption">
-                    <div class="energy__description">Elektrina</div>
-                    <div class="energy__value">{electricity} kW</div>
+                <div className="energy__consumption">
+                    <div className="energy__description">Elektrina</div>
+                    <div className="energy__value">{electricity} kW</div>
                 </div>
             </div>
-            <div class="energy__source">
-                <div class="energy__icon">
+            <div className="energy__source">
+                <div className="energy__icon">
                     <img src={waterSvg} />
                 </div>
-                <div class="energy__consumption">
-                    <div class="energy__description">Voda</div>
-                    <div class="energy__value">{water} m<sup>3</sup></div>
+                <div className="energy__consumption">
+                    <div className="energy__description">Voda</div>
+                    <div className="energy__value">{water} m<sup>3</sup></div>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ const App = () => (
   <>
     <div className="container">
       <Header className= "header"  title="Chytrý dům"/>
-      <Dashboard data={smartHomeData} />
+      <Dashboard className= "dashboard" data={smartHomeData} />
     </div>
   </>
 );
