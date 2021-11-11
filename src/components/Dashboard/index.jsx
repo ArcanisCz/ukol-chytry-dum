@@ -5,6 +5,7 @@ import Blinds  from '../Blinds'
 import Climate from '../Climate/'
 import Energy from '../Energy'
 
+import './style.css';
 
 const Dashboard = ({data}) => {
     return (
