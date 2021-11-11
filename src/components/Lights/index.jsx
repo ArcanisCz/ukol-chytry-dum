@@ -1,6 +1,8 @@
 import React from "react";
 import Light from "../Light";
 
+import './style.css';
+
 
 const Lights = ({lights}) => (
     <div className="lights">
