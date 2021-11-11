@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 
 import lightOn from './light-on.svg';
 import lightOff from './light-off.svg';
