@@ -3,6 +3,7 @@ import React from "react";
 import electricitySvg from './electricity.svg';
 import waterSvg from './water.svg';
 
+import './style.css';
 
 const Energy = ({electricity, water}) => {
     return (
