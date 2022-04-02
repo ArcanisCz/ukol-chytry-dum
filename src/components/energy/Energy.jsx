@@ -6,7 +6,7 @@ const Energy = ({ energyConsumption }) => {
     <div className="energy">
       {energyConsumption.map((item) => {
         return (
-          <div className="energy__source">
+          <div className="energy__source" key={item.label}>
             <div className="energy__icon">
               <img src={item.img} />
             </div>
