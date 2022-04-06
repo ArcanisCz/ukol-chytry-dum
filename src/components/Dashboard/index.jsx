@@ -8,7 +8,9 @@ import { Lights } from "../Lights/index";
 export const Dashboard = ({data}) => {
     return (
         <main className="dashboard">
-            <Lights />
+            <Lights 
+                lights={data.lights}
+            />
 
             <Climate 
                 temperature={data.climate.temperature}
