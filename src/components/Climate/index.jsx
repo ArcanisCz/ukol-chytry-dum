@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css"
 
 import tempIcon from "./temp.svg"
 
 export const Climate = ({temperature, humidity}) => {
+
+    const [stupne, setStupne] = useState(24)
+
+
     return (
         <div className="climate">
             <div className="climate__icon">
@@ -14,8 +18,8 @@ export const Climate = ({temperature, humidity}) => {
                 <div className="climate__humidity"> Vlhkost vzduchu {humidity} %</div>
             </div>
             <div className="climate__controls">
-                <button>+</button>
-                <button>-</button>
+                <button onClick={() => setStupne(stupne + 1)}>+</button>
+                <button onClick={() => setStupne(stupne - 1)}>-</button>
 
             </div>
         </div>
