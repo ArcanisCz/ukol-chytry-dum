@@ -14,8 +14,8 @@ export const Climate = ({temperature, humidity}) => {
                 <div className="climate__humidity"> Vlhkost vzduchu {humidity} %</div>
             </div>
             <div className="climate__controls">
-                <button></button>
-                <button></button>
+                <button>+</button>
+                <button>-</button>
 
             </div>
         </div>

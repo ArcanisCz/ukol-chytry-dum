@@ -9,17 +9,23 @@ export const Blinds = ({state}) => {
     const [stateBlinds, setStateBlinds] = useState(state)
     
     // if open click on this, else close
-    setStateBlinds
+    const handleClick = () => {
+        if (stateBlinds === "open") {
+            setStateBlinds = ("blindsOpen")
+        } else {
+            setStateBlinds = ("blindsClosed")
+        }
+    }
 
     return (
-        <div className="blinds" >
+        <div onClick={handleClick} className="blinds" >
             <div className="blinds__icon">
                 <img src={stateBlinds === "open" ? blindsOpen : blindsClosed} />
             </div>
             <div className="blinds__name">Žaluzie</div>
             <div className="blinds__controls">
-                <button></button>
-                <button></button>
+                <button>Otevřeno</button>
+                <button>Zavřeno</button>
             </div>
         </div>
     )
