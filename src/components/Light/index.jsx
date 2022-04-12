@@ -29,7 +29,7 @@ export const Light = ({name, state}) => {
     console.log(Light)
     
     return(
-        <div className="light" onCůick={handleClick}>
+        <div className="light" onClick={handleClick}>
             <div className="light__icon">
                 <img src={stateLight === "on" ? lightOn : lightOff} />
             </div>

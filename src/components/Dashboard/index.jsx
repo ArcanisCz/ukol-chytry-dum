@@ -17,7 +17,9 @@ export const Dashboard = ({data}) => {
                 humidity={data.climate.humidity}
             />
 
-            <Blinds />
+            <Blinds 
+                state={data.blinds}
+            />
 
             < Energy 
                 electricity={data.energyConsumption.electricity}
