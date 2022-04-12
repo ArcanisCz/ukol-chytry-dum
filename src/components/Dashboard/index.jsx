@@ -13,7 +13,7 @@ export const Dashboard = ({data}) => {
             />
 
             <Climate 
-                temperature={data.climate.temperature}
+                initialTemperature={data.climate.temperature}
                 humidity={data.climate.humidity}
             />
 

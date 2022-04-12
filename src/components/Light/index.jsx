@@ -5,11 +5,10 @@ import lightOn from "./light-on.svg"
 import lightOff from "./light-off.svg"
 
 export const Light = ({name, state}) => {
-    const [stateLight, setStateLight] = useState((state === "on") ? true : false)
+    const [stateLight, setStateLight] = useState(state)
 
 
     const handleClick = () => {
-    
         
 		if (stateLight === "turnOn") {
             setStateLight = ("turnOn")
@@ -19,6 +18,7 @@ export const Light = ({name, state}) => {
            
         }
 	}
+    console.log(Light)
     
     return(
         <div onClick={handleClick} className="light">

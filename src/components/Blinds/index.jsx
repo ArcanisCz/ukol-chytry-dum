@@ -7,25 +7,33 @@ import blindsClosed from "./blinds-closed.svg"
 
 export const Blinds = ({state}) => {
     const [stateBlinds, setStateBlinds] = useState(state)
-    
-    // if open click on this, else close
-    const handleClick = () => {
-        if (stateBlinds === "open") {
-            setStateBlinds = ("blindsOpen")
-        } else {
-            setStateBlinds = ("blindsClosed")
-        }
+
+    const open = () => {
+        setStateBlinds('open')
     }
 
+    const closed = () => {
+        setStateBlinds('closed')
+    }
+    
+    // if open click on this, else close
+    // const handleClick = () => {
+    //     if (stateBlinds === "open") {
+    //         setStateBlinds = ("blindsOpen")
+    //     } else {
+    //         setStateBlinds = ("blindsClosed")
+    //     }
+    // }
+
     return (
-        <div onClick={handleClick} className="blinds" >
+        <div className="blinds" >
             <div className="blinds__icon">
-                <img src={stateBlinds === "open" ? blindsOpen : blindsClosed} />
+                <img src={stateBlinds === 'open' ? blindsOpen : blindsClosed} />
             </div>
             <div className="blinds__name">Žaluzie</div>
             <div className="blinds__controls">
-                <button>Otevřeno</button>
-                <button>Zavřeno</button>
+                <button className={stateBlinds === 'open' ? "button button--active" : "button"} onClick={open}>Otevřeno</button>
+                <button className={stateBlinds === 'closed' ? "button button--active" : "button"} onClick={closed}>Zavřeno</button>
             </div>
         </div>
     )

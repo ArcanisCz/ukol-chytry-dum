@@ -3,9 +3,9 @@ import "./style.css"
 
 import tempIcon from "./temp.svg"
 
-export const Climate = ({temperature, humidity}) => {
+export const Climate = ({initialTemperature, humidity}) => {
 
-    const [stupne, setStupne] = useState(temperature) 
+    const [stupne, setStupne] = useState(initialTemperature) 
     
     return (
         <div className="climate">
