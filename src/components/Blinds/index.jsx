@@ -5,7 +5,7 @@ import { useState } from "react"
 import blindsOpen from "./blinds-open.svg"
 import blindsClosed from "./blinds-closed.svg"
 
-export const Blinds = ({state}) => {
+export const Blinds = ({ state }) => {
     const [stateBlinds, setStateBlinds] = useState(state)
 
     const open = () => {

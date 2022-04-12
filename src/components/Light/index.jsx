@@ -7,26 +7,33 @@ import lightOff from "./light-off.svg"
 export const Light = ({name, state}) => {
     const [stateLight, setStateLight] = useState(state)
 
-
     const handleClick = () => {
         
-		if (stateLight === "turnOn") {
-            setStateLight = ("turnOn")
+		if (stateLight === "on") {
+            setStateLight = ("off")
     
         } else {
-            setStateLight = ("turnOff")
+            setStateLight = ("on")
            
         }
 	}
+
+    // const on = () => {
+    //     setStateLight('turnOn')
+    // }
+
+    // const off = () => {
+    //     setStateLight('turnOff')
+    // }
+
     console.log(Light)
     
     return(
-        <div onClick={handleClick} className="light">
+        <div className="light" onCůick={handleClick}>
             <div className="light__icon">
-                <img src={stateLight === "turnOn" ? lightOn : lightOff} />
+                <img src={stateLight === "on" ? lightOn : lightOff} />
             </div>
             <div className="light__name">{name}</div>
-            <div className="light__active"></div>
         </div>
     )
     
