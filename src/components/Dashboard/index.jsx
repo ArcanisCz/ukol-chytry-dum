@@ -1,8 +1,16 @@
 import React from 'react';
+import Lights from '../Lights';
+//import {smartHomeData} from '../../smartHomeData';
 
-const Dashboard = (data) => {
+const Dashboard = ({data}) => {
+
+    //console.log(data.lights);
+
     return (
-        <main class="dashboard">
+        <main className="dashboard">
+            <Lights lights={data.lights} />            
+
+            
         </main>
 
     )

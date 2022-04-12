@@ -1,10 +1,14 @@
 import React from 'react';
+import Light from '../Light';
+import './style.css';
 
-const Lights = (Lights) => {
+const Lights = (lights) => {
+    console.log (lights.lights)
     return(
-        <div></div>
-        
-    )
-}
+       
+            lights.lights.map(light => <Light name={light.name} state={light.state} />)    
+        )
+     
+};
 
 export default Lights;
