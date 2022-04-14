@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 
 const Climate = ({temperature, humidity}) => {
+
+	const [degrees, setDegrees] = useState(temperature);
 
     return(
         <div className="climate">
@@ -9,12 +11,12 @@ const Climate = ({temperature, humidity}) => {
 					<img src="./assets/temp.svg"></img>
 				</div>
 				<div className="climate__content">
-					<div className="climate__temperature">{temperature} &deg;C</div>
+					<div className="climate__temperature">{degrees} &deg;C</div>
 					<div className="climate__humidity">Vlhkost vzduchu: {humidity} &nbsp;%</div>
 				</div>
 				<div className="climate__controls">
-					<button className="button">+</button>
-					<button className="button">-</button>
+					<button className="button" onClick={() => {setDegrees(degrees+1)}}>+</button>
+					<button className="button" onClick={() => {setDegrees(degrees-1)}}>-</button>
 				</div>
 			</div>
     )
