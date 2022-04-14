@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import './style.css';
 import Header from './components/Header';
 import Dashboard from './components/Dashboard';
+import Climate from './components/Climate';
 import smartHomeData from './smartHomeData';
 
 const App = () => (
@@ -10,6 +11,7 @@ const App = () => (
     <div class="container">
       <Header title="Chytrý dům" />
       <Dashboard data={smartHomeData} />
+      <Climate temperature={smartHomeData.climate.temperature} humidity={smartHomeData.climate.humidity} />
 
     </div>
   </>
