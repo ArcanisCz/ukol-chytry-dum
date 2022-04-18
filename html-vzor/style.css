@@ -20,44 +20,6 @@ body {
 	display: flex;
 }
 
-.header {
-	flex-shrink: 0;
-	width: 120px;
-	position: relative;
-}
-
-.header h1 {
-	margin: 0;
-	font-size: 56px;
-	line-height: 1;
-	font-weight: 300;
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) rotate(-90deg);
-	white-space: nowrap;
-	color: white;
-}
-
-
-.dashboard {
-	flex: 1 0 auto;
-	display: grid;
-	grid-template-columns: 350px 350px;
-	grid-template-rows: repeat(4, auto);
-	grid-template-areas:
-		"lights climate"
-		"lights climate"
-		"lights blinds"
-		"lights energy";
-	gap: 10px;
-	padding: 30px;
-	background-image: linear-gradient(to top, #c4c5c7ee 0%, #dcdddfee 50%, #ebebebee 100%);
-	border-radius: 4px;
-}
-
-
 /* tlačítka */
 .button {
 	flex: 0 0 50%;
@@ -86,51 +48,7 @@ body {
 
 
 /* světla */
-.lights {
-	grid-area: lights;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
-	gap: 10px;
-}
 
-
-.light {
-	display: flex;
-	align-items: center;
-	padding: 10px 20px;
-	background-color: white;
-	border-radius: 5px;
-	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-	cursor: pointer;
-	transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
-	border: 2px solid white;
-}
-
-.light:hover {
-	transform: translateY(-3px);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-	border-color: #0099ff;
-}
-
-.light:active {
-	transform: translateY(0);
-	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-	border-color: #0099ff;
-}
-
-.light__icon {
-	margin-right: 20px;
-}
-
-.light__icon img {
-	height: 45px;
-}
-
-.light__name {
-	flex: 1;
-	font-weight: bold;
-}
 
 
 
