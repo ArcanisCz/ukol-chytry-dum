@@ -11,8 +11,6 @@ const App = () => (
     <div class="container">
       <Header title="Chytrý dům" />
       <Dashboard data={smartHomeData} />
-      <Climate temperature={smartHomeData.climate.temperature} humidity={smartHomeData.climate.humidity} />
-
     </div>
   </>
 );
