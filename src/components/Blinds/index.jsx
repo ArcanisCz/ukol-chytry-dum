@@ -1,21 +1,25 @@
 import React, { useState }  from 'react';
+import './style.css';
 
 const Blinds = ({state}) => {
 
+    const openBlinds = './assets/blinds-open.svg';
+    const closedBlinds = './assets/blinds-closed.svg';
+
     const [status, setStatus] = useState(state)
-    console.log(state);
+    console.log(status);
 
     return (
         <div class="blinds">
-				<div class="blinds__icon">
-					<img src="./images/blinds-open.svg"></img>
+				<div className="blinds__icon">
+					<img src={status==='open' ? openBlinds : closedBlinds}></img>
 				</div>
-				<div class="blinds__name">
+				<div className="blinds__name">
 					Žaluzie
 				</div>
 				<div class="blinds__controls">
-					<button class="button button--active">Otevřeno</button>
-					<button class="button">Zavřeno</button>
+					<button className={`button ${status==='open' ? 'button--active' : ''}`} onClick={()=>{setStatus('open')}} >Otevřeno</button>
+					<button className={`button ${status==='open' ? '' : 'button--active'}`}  onClick={()=>{setStatus('closed')}} >Zavřeno</button>
 				</div>
 			</div>
     )

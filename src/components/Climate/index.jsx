@@ -4,6 +4,7 @@ import './style.css';
 const Climate = ({temperature, humidity}) => {
 
 	const [degrees, setDegrees] = useState(temperature);
+	console.log(temperature)
 
     return(
         <div className="climate">

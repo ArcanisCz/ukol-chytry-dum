@@ -9,8 +9,8 @@ const Dashboard = ({data}) => {
     return (
         <main className="dashboard">
             <Lights lights={data.lights} /> 
-            <Climate temperature={data.temperature} humidity={data.humidity} />
-            <Blinds state={data.data}/>           
+            <Climate temperature={data.climate.temperature} humidity={data.climate.humidity} />
+            <Blinds state={data.blinds}/>           
         </main>
 
     )
