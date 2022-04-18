@@ -2,29 +2,29 @@ export const smartHomeData = {
 	lights: [
 		{
 			name: 'Obývací pokoj',
-			state: 'off',
+			state: 'off'
 		},
 		{
 			name: 'Ložnice',
-			state: 'on',
+			state: 'on'
 		},
 		{
 			name: 'Kuchyně',
-			state: 'on',
+			state: 'on'
 		},
 		{
 			name: 'Chodba',
-			state: 'off',
-		},
+			state: 'off'
+		}
 	],
 	climate: {
 		temperature: 24,
-		humidity: 50,
+		humidity: 50
 	},
 	blinds: 'open',
 	energyConsumption: {
 		electricity: 36.7,
-		water: 14.1,
+		water: 14.1
 	}
 };
 
