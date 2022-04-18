@@ -1,10 +1,9 @@
 import React, { useState }  from 'react';
 import './style.css';
+import openBlinds from './blinds-open.svg';
+import closedBlinds from './blinds-closed.svg';
 
 const Blinds = ({state}) => {
-
-    const openBlinds = './assets/blinds-open.svg';
-    const closedBlinds = './assets/blinds-closed.svg';
 
     const [status, setStatus] = useState(state)
     console.log(status);
