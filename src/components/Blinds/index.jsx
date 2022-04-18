@@ -17,7 +17,7 @@ const Blinds = ({state}) => {
 				<div className="blinds__name">
 					Žaluzie
 				</div>
-				<div class="blinds__controls">
+				<div className="blinds__controls">
 					<button className={`button ${status==='open' ? 'button--active' : ''}`} onClick={()=>{setStatus('open')}} >Otevřeno</button>
 					<button className={`button ${status==='open' ? '' : 'button--active'}`}  onClick={()=>{setStatus('closed')}} >Zavřeno</button>
 				</div>

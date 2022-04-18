@@ -3,6 +3,7 @@ import Lights from '../Lights';
 import './style.css';
 import Climate from '../Climate';
 import Blinds from '../Blinds';
+import Energy from '../Energy';
 
 const Dashboard = ({data}) => {
 
@@ -10,7 +11,8 @@ const Dashboard = ({data}) => {
         <main className="dashboard">
             <Lights lights={data.lights} /> 
             <Climate temperature={data.climate.temperature} humidity={data.climate.humidity} />
-            <Blinds state={data.blinds}/>           
+            <Blinds state={data.blinds}/>   
+            <Energy electricity={data.energyConsumption.electricity} water={data.energyConsumption.water}></Energy>        
         </main>
 
     )
