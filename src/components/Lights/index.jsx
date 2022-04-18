@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css"
 
-import { Light } from "../Light";
+import { Light } from "../Light/index";
 
 export const Lights = ({ lights }) => {
     return(
