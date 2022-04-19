@@ -1,0 +1,54 @@
+.light {
+  display: flex;
+  align-items: center;
+}
+
+.light__item {
+  flex: 0 0 auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  border: 2px solid white;
+}
+
+.light__item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  border-color: #0099ff;
+}
+
+.light__item:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  border-color: #0099ff;
+}
+
+.light__icon {
+  margin-right: 20px;
+}
+
+.light__icon img {
+  height: 45px;
+}
+
+.light__name {
+  flex: 1;
+  font-weight: bold;
+}
+
+.light__btn.button {
+  flex: 0 0 auto;
+  padding: 7px;
+  color: red;
+  background: whitesmoke;
+}
+
+.light__btn.button:hover {
+  background: white;
+}
